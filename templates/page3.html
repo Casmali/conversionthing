@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% set active_page = "page3" %}
+
+{% block title %}Page 3{% endblock %}
+  
+{% block content %}
+    <!--page content-->
+    <h1>Page 3</h1>
+    
+    <form action='/response'>
+      This will convert symbols in the P block.<br>
+      <input type="text" name="symbol">
+      <br><br>
+      <input type="submit">
+    </form>
+
+{% endblock %}
