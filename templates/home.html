@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+  
+{% block content %}
+    <!--page content-->
+    
+    <h1>Home Page</h1>
+    <form action='/response'>
+     This is going to convert Ml to L <br>
+      <input type="text" name="number">
+      <br><br>
+      <input type="submit">
+    </form>
+    
+{% endblock %}
