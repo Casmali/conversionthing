@@ -24,9 +24,8 @@ def render_response():
     if symbol == 'gold':
         reply = "Au"
     
-    else:
-            if symbol == 'lithium;"
-            reply = "Li"
+    elif:symbol == 'lithium;"
+        reply = "Li"
             
             #reply = "My favorite color is lavender."
             return render_template('response.html', response = reply)
