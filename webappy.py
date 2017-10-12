@@ -12,8 +12,8 @@ def render_main():
     if symbol == 'sodium':
         reply = "Cl"
     
-    elif:symbol == 'lithium;"
-        reply = "Li"
+    elif:symbol == 'hydrogen;"
+        reply = "H "
             
             #reply = "My favorite color is lavender."
             return render_template('response.html', response = reply)
@@ -44,11 +44,11 @@ def render_page2():
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-    if symbol == 'gold':
-        reply = "Au"
+    if symbol == 'carbon':
+        reply = "C"
     
-    elif:symbol == 'lithium;"
-        reply = "Li"
+    elif:symbol == 'sulfur;"
+        reply = "S"
             
             #reply = "My favorite color is lavender."
             return render_template('response.html', response = reply)
