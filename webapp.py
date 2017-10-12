@@ -13,7 +13,6 @@ def render_main():
         reply = "Cl"
     
     elif symbol == 'hydrogen':
-        
         reply = "H "
             
             #reply = "My favorite color is lavender."
@@ -30,11 +29,11 @@ def render_page1():
     if symbol == 'gold':
         reply = "Au"
     
-    elif:symbol == 'lithium;"
+    elif symbol == 'lithium':
         reply = "Li"
             
             #reply = "My favorite color is lavender."
-            return render_template('response.html', response = reply)
+    return render_template('response.html', response = reply)
     
     
 
@@ -48,11 +47,11 @@ def render_page2():
     if symbol == 'carbon':
         reply = "C"
     
-    elif:symbol == 'sulfur;"
+    elif symbol == 'sulfur':
         reply = "S"
             
             #reply = "My favorite color is lavender."
-            return render_template('response.html', response = reply)
+    return render_template('response.html', response = reply)
     
     
 
