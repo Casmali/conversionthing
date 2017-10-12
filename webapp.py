@@ -8,10 +8,10 @@ def render_home():
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-    if symbol == 'sodium':
+    if name == 'sodium':
         reply = "Cl"
     
-    elif symbol == 'hydrogen':
+    elif name == 'hydrogen':
         reply = "H "
             
             #reply = "My favorite color is lavender."
@@ -24,10 +24,10 @@ def render_page1():
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-    if symbol == 'gold':
+    if name == 'gold':
         reply = "Au"
     
-    elif symbol == 'lithium':
+    elif name == 'lithium':
         reply = "Li"
             
             #reply = "My favorite color is lavender."
@@ -41,10 +41,10 @@ def render_page2():
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-    if symbol == 'carbon':
+    if name == 'carbon':
         reply = "C"
     
-    elif symbol == 'sulfur':
+    elif name == 'sulfur':
         reply = "S"
             
             #reply = "My favorite color is lavender."
