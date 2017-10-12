@@ -9,7 +9,7 @@ def render_home():
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
     """if name == 'sodium':
-        reply = "Cl"
+        reply = "Na"
     
     elif name == 'hydrogen':
         reply = "H "
