@@ -12,10 +12,21 @@ def render_home():
         reply = "Na"
     
     elif name == 'hydrogen':
-        reply = "H "
+        reply = "H """"
             
-            #reply = "My favorite color is lavender."""
+            
     return render_template('response.html', response = "reply")
+
+@app.route("/home")
+def render_homep():
+    name= request.args['symbol']
+    "if name == 'sodium':
+        reply = "Na"
+    
+    elif name == 'hydrogen':
+        reply = "H"
+        
+    return render_template('response.html', response = "reply")    
    
 
 @app.route("/p1")
