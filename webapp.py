@@ -12,11 +12,12 @@ def render_main():
     if symbol == 'sodium':
         reply = "Cl"
     
-    elif:symbol == 'hydrogen;"
+    elif symbol == 'hydrogen':
+        
         reply = "H "
             
             #reply = "My favorite color is lavender."
-            return render_template('response.html', response = reply)
+    return render_template('response.html', response = reply)
    
 
 @app.route("/p1")
