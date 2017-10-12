@@ -3,7 +3,7 @@ from flask import Flask, url_for, render_template
 app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
 
 @app.route("/")
-def render_main():
+def render_home():
     name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
