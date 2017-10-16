@@ -20,7 +20,8 @@ def render_home():
 @app.route("/")
 def render_homep():
     name= request.args['symbol']
-    "if name == 'sodium':
+    if 'symbol' in request.args  
+    if name == 'sodium':
         reply = "Na"
     
     elif name == 'hydrogen':
