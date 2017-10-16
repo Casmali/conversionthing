@@ -17,7 +17,7 @@ def render_main():
             reply = "H"
             
             
-    return render_template('response.html', response = reply)
+    return render_template('home.html', response = reply)
 
 """app.route("/")
 def render_homep():
@@ -45,7 +45,7 @@ def render_page1():
         reply = "Li"
             
             #reply = "My favorite color is lavender."
-    return render_template('response.html', response = reply)
+    return render_template('page1.html', response = reply)
     
     
 
@@ -62,7 +62,7 @@ def render_page2():
         reply = "S"
             
             #reply = "My favorite color is lavender."
-    return render_template('response.html', response = reply)
+    return render_template('page2.html', response = reply)
     
     
 
