@@ -8,11 +8,11 @@ def render_home():
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-    """if name == 'sodium':
+  if name == 'sodium':
         reply = "Na"
     
     elif name == 'hydrogen':
-        reply = "H """"
+        reply = "H "
             
             
     return render_template('response.html', response = "reply")
