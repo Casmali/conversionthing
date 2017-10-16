@@ -12,11 +12,11 @@ def render_home():
   if name == 'sodium':
         reply = "Na"
     
-    elif name == 'hydrogen':
+  elif name == 'hydrogen':
         reply = "H "
             
             
-    return render_template('response.html', response = "reply")
+  return render_template('response.html', response = "reply")
 
 """app.route("/")
 def render_homep():
