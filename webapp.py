@@ -4,7 +4,7 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_home():
-    #name = request.args['symbol']
+   """ #name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
@@ -17,7 +17,7 @@ def render_home():
             
     return render_template('response.html', response = "reply")
 
-"""@app.route("/home")
+@app.route("/home")
 def render_homep():
     name= request.args['symbol']
     "if name == 'sodium':
