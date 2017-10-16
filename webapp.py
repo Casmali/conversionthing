@@ -17,7 +17,7 @@ def render_home():
             
     return render_template('response.html', response = "reply")
 
-@app.route("/home")
+"""@app.route("/home")
 def render_homep():
     name= request.args['symbol']
     "if name == 'sodium':
@@ -26,7 +26,7 @@ def render_homep():
     elif name == 'hydrogen':
         reply = "H"
         
-    return render_template('response.html', response = "reply")    
+    return render_template('response.html', response = "reply") """ 
    
 
 @app.route("/p1")
