@@ -18,18 +18,6 @@ def render_main():
             
             
     return render_template('home.html', response = reply)
-
-"""app.route("/")
-def render_homep():
-    name= request.args['symbol']
-    if 'symbol' in request.args  
-    if name == 'sodium':
-        reply = "Na"
-    
-    elif name == 'hydrogen':
-        reply = "H"
-        
-    return render_template('response.html', response = "reply")  """
    
 
 @app.route("/p1")
@@ -66,22 +54,6 @@ def render_page2():
     
     
 
-
-#@app.route("/response")
-#def render_response():
-    #name = request.args['symbol']
-    #The request obj. stores info about the request sent to the server. 
-    #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
-    #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-    #if symbol == 'gold':
-     #   reply = "Au"
-    
-    #elif:symbol == 'lithium;"
-        
-        #reply = "Li"
-            
-            #reply = "My favorite color is lavender."
-            #return render_template('response.html', response = reply)
     
     
 if __name__=="__main__":
