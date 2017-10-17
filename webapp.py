@@ -22,15 +22,15 @@ def render_main():
 
 @app.route("/page1")
 def render_page1():
-         name = request.args['symbol']
+        name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-        if name == 'gold':
-            reply = "Au"
+    if name == 'gold':
+        reply = "Au"
     
-        elif name == 'lithium':
-            reply = "Li"
+    elif name == 'lithium':
+        reply = "Li"
             
             #reply = "My favorite color is lavender."
     return render_template('page1.html', response = reply)
@@ -43,11 +43,11 @@ def render_page2():
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
     #The info in args is visible in the url for the pages being requested (ex.../response?color=blue)
-        if name == 'carbon':
-            reply = "C"
+    if name == 'carbon':
+        reply = "C"
     
-        elif name == 'sulfur':
-            reply = "S"
+    elif name == 'sulfur':
+        reply = "S"
             
             #reply = "My favorite color is lavender."
     return render_template('page2.html', response = reply)
