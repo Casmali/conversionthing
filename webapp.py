@@ -22,6 +22,8 @@ def render_main():
 
 @app.route("/page1")
 def render_page1():
+    reply=""
+    if 'symbol' in request.args:
     name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
@@ -39,6 +41,8 @@ def render_page1():
 
 @app.route("/page2")
 def render_page2():
+    reply=""
+    if 'symbol' in request.args:
     name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
     #The args is a multi dict,(like a doctionary) but it can have multiple values for the same key
