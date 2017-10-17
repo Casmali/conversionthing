@@ -21,11 +21,11 @@ def render_main():
 def render_page1():
     name = request.args['symbol']
     
-        if name == 'gold':
-            reply = "Au"
+         if name == 'gold':
+             reply = "Au"
     
-        elif name == 'lithium':
-            reply = "Li"
+         elif name == 'lithium':
+             reply = "Li"
             
             #reply = "My favorite color is lavender."
      return render_template('page1.html', response = reply)
@@ -36,12 +36,12 @@ def render_page1():
 def render_page2():
     name = request.args['symbol']
     
-        if name == 'carbon':
-            reply = "C"
+         if name == 'carbon':
+             reply = "C"
     
-        elif name == 'sulfur':
-            reply = "S"
-            
+         elif name == 'sulfur':
+             reply = "S"
+             
             #reply = "My favorite color is lavender."
      return render_template('page2.html', response = reply)
     
