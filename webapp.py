@@ -28,7 +28,7 @@ def render_page1():
             reply = "Li"
             
             #reply = "My favorite color is lavender."
-    return render_template('page1.html', response = reply)
+     return render_template('page1.html', response = reply)
     
     
 
@@ -43,7 +43,7 @@ def render_page2():
             reply = "S"
             
             #reply = "My favorite color is lavender."
-    return render_template('page2.html', response = reply)
+     return render_template('page2.html', response = reply)
     
     
 
