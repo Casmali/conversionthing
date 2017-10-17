@@ -20,7 +20,7 @@ def render_main():
     return render_template('home.html', response = reply)
    
 
-@app.route("/p1")
+@app.route("/page1")
 def render_page1():
     name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
@@ -37,7 +37,7 @@ def render_page1():
     
     
 
-@app.route("/p2")
+@app.route("/page2")
 def render_page2():
     name = request.args['symbol']
     #The request obj. stores info about the request sent to the server. 
