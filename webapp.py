@@ -23,7 +23,7 @@ def render_page1():
              reply = "Au"   
         elif name == 'lithium':
              reply = "Li"       
-     return render_template('page1.html', response = reply)
+    return render_template('page1.html', response = reply)
     
     
 
