@@ -14,7 +14,7 @@ def render_main():
     return render_template('home.html', response = reply)
    
 
-@app.route("/page1")
+"""@app.route("/page1")
 def render_page1():
     reply=""
     if 'symbol' in request.args:
@@ -36,7 +36,7 @@ def render_page2():
              reply = "C"
         elif name == 'sulfur':
              reply = "S"            
-     return render_template('page2.html', response = reply)
+     return render_template('page2.html', response = reply)"""
     
     
 if __name__=="__main__":
