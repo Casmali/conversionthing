@@ -14,7 +14,7 @@ def render_main():
     return render_template('home.html', response = reply)
    
 
-"""@app.route("/page1")
+@app.route("/page1")
 def render_page1():
     reply=""
     if 'symbol' in request.args:
@@ -27,7 +27,7 @@ def render_page1():
     
     
 
-@app.route("/page2")
+"""@app.route("/page2")
 def render_page2():
     reply=""
     if 'symbol' in request.args:
