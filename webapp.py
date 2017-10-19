@@ -7,7 +7,7 @@ def render_main():
     reply=""
     if 'symbol' in request.args:
         reply="hi"
-        """name = request.args['symbol']
+        name = request.args['symbol']
         if name == 'sodium':
             reply = "Na"
         elif name == 'hydrogen':
