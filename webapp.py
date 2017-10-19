@@ -27,16 +27,16 @@ def render_page1():
     
     
 
-"""@app.route("/page2")
+@app.route("/page2")
 def render_page2():
     reply=""
-    if 'symbol' in request.args:
+    """if 'symbol' in request.args:
         name = request.args['symbol']   
         if name == 'carbon':
              reply = "C"
         elif name == 'sulfur':
-             reply = "S"            
-     return render_template('page2.html', response = reply)"""
+             reply = "S""""            
+     return render_template('page2.html', response = reply)
     
     
 if __name__=="__main__":
