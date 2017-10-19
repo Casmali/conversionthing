@@ -4,7 +4,7 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_main():
-    reply=""
+        reply=""
         if 'symbol' in request.args:
     name = request.args['symbol']
         
@@ -20,7 +20,7 @@ def render_main():
 
 @app.route("/page1")
 def render_page1():
-    reply=""
+        reply=""
         if 'symbol' in request.args:
     name = request.args['symbol']
     
@@ -37,7 +37,7 @@ def render_page1():
 
 @app.route("/page2")
 def render_page2():
-    reply=""
+        reply=""
         if 'symbol' in request.args:
     name = request.args['symbol']
     
