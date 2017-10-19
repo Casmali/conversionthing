@@ -24,10 +24,10 @@ def render_page1():
         if 'symbol' in request.args:
     name = request.args['symbol']
     
-         if name == 'gold':
+        if name == 'gold':
              reply = "Au"
     
-         elif name == 'lithium':
+        elif name == 'lithium':
              reply = "Li"
             
             #reply = "My favorite color is lavender."
@@ -41,10 +41,10 @@ def render_page2():
         if 'symbol' in request.args:
     name = request.args['symbol']
     
-         if name == 'carbon':
+        if name == 'carbon':
              reply = "C"
     
-         elif name == 'sulfur':
+        elif name == 'sulfur':
              reply = "S"
              
             #reply = "My favorite color is lavender."
