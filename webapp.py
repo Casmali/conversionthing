@@ -4,54 +4,39 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 
 @app.route("/")
 def render_main():
-        reply=""
-        if 'symbol' in request.args:
-            name = request.args['symbol']
-        
+    reply=""
+    if 'symbol' in request.args:
+        name = request.args['symbol']
         if name == 'sodium':
             reply = "Na"
-    
         elif name == 'hydrogen':
             reply = "H"
-            
-            
     return render_template('home.html', response = reply)
    
 
 @app.route("/page1")
 def render_page1():
-        reply=""
-        if 'symbol' in request.args:
-            name = request.args['symbol']
-    
+    reply=""
+    if 'symbol' in request.args:
+        name = request.args['symbol']
         if name == 'gold':
-             reply = "Au"
-    
+             reply = "Au"   
         elif name == 'lithium':
-             reply = "Li"
-            
-            #reply = "My favorite color is lavender."
+             reply = "Li"       
      return render_template('page1.html', response = reply)
     
     
 
 @app.route("/page2")
 def render_page2():
-        reply=""
-        if 'symbol' in request.args:
-            name = request.args['symbol']
-    
+    reply=""
+    if 'symbol' in request.args:
+        name = request.args['symbol']   
         if name == 'carbon':
              reply = "C"
-    
         elif name == 'sulfur':
-             reply = "S"
-             
-            #reply = "My favorite color is lavender.
+             reply = "S"            
      return render_template('page2.html', response = reply)
-    
-    
-
     
     
 if __name__=="__main__":
