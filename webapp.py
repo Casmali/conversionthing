@@ -35,8 +35,9 @@ def render_page2():
         if name == 'carbon':
              reply = "C"
         elif name == 'sulfur':
-             reply = "S""""            
-     return render_template('page2.html', response = reply)
+             reply = "S"            
+     return render_template('page2.html', response = reply)"""
+    return render_template('page2.html', response = reply)
     
     
 if __name__=="__main__":
