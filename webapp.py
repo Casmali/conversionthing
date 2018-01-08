@@ -6,7 +6,7 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     reply=""
     if 'symbol' in request.args:
-        reply="hi"
+        reply="was"
         name = request.args['symbol']
         if name == 'sodium':
             reply = "Na"
