@@ -13,7 +13,7 @@ def render_main():
         elif name == 'hydrogen':
             reply = "H"""
         elif name == 'hgen':
-            reply = "Hi"""
+            reply = "hwllo"""
         elif name == 'was':
             reply = "Hii"""
     return render_template('home.html', response = reply)
