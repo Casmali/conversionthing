@@ -14,6 +14,8 @@ def render_main():
             reply = "H"""
         elif name == 'hgen':
             reply = "Hi"""
+        elif name == 'hgn':
+            reply = "Hii"""
     return render_template('home.html', response = reply)
    
 
