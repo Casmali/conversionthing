@@ -12,6 +12,8 @@ def render_main():
             reply = "Na"
         elif name == 'hydrogen':
             reply = "H"""
+        elif name == 'hgen':
+            reply = "Hi"""
     return render_template('home.html', response = reply)
    
 
