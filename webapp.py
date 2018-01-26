@@ -3,15 +3,15 @@ from flask import Flask, url_for, render_template, request
 app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
 
 @app.route("/")
-# def render_main():
-#     reply=""
-#     if 'symbol' in request.args:
-#         reply="oh"
-#         name = request.args['symbol']
-#         if name == 'Mr.Snuffleupagus':
-#             reply = "Correct"
-#         else:
-#             reply = "Incorrect"
+ def render_main():
+     reply=""
+     if 'symbol' in request.args:
+         reply="oh"
+         name = request.args['symbol']
+         if name == 'Mr.Snuffleupagus':
+             reply = "Correct"
+         else:
+             reply = "Incorrect"
    
     return render_template('home.html')
    
