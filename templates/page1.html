@@ -6,42 +6,42 @@
 {% block content %}
     <!--page content-->
     <h1>Page 1</h1>
-    <form action='/page1'>
+    <form action='/page1' method="POST">
       Who is god?<br>
       <input type="text" name="first">
-      <br><br>
+      <br><p>{{ re1 }}</p><br>
+	  
 
       What is his full name?<br>
       <input type="text" name="second">
-      <br><br>
+      <br><p>{{ re2 }}</p><br>
 
       When was he born?<br>
       <input type="text" name="third">
-      <br><br>
+      <br><p>{{ re3 }}</p><br>
 
       How old is he??<br>
       <input type="text" name="fourth">
-      <br><br>
+      <br><p>{{ re4 }}</p><br>
       
       Who is god's best friend??<br>
       <input type="text" name="fifth">
-      <br><br>
+      <br><p>{{ re5 }}</p><br>
       
        Name all of Gods family members<br>
       <input type="text" name="sixth">
-      <br><br>
+      <br><p>{{ re6 }}</p><br>
       
        Which one of gods family members tried to kill two people?<br>
       <input type="text" name="seventh">
-      <br><br>
+      <br><p>{{ re7 }}</p><br>
       
       WHO IS GOD????<br>
       <input type="text" name="eighth">
-      <br><br>
+      <br><p>{{ re8 }}</p><br>
 
       
       <input type="submit">
     </form>
 
-<p>{{ response }}</p>
 {% endblock %}
