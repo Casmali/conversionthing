@@ -6,11 +6,14 @@
 {% block content %}
     <!--page content-->
     <h1>Page 2</h1>
-      <form action='/page2'>
-      Would you like to convert carbon or sulfer into a symbol?<br>
-      <input type="text" name="symbol">
-      <br><br>
-      <input type="submit">
-    </form>
+	<p> If you have taken the quiz, Below will show you your previous scores.</p>
+	<p> 
+ {% if 'numCorrect' in session %} 
+  {{ session['numCorrect'] }}/8<br>
+ {% endif %}
+
+ {% if 'highScore' in session %} 
+   {{ session['highScore'] }}/8<br>
+ {% endif %}</p>
 <p>{{ response }}</p>
 {% endblock %}
