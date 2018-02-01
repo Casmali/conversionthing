@@ -7,13 +7,13 @@
     <!--page content-->
     <h1>Page 2</h1>
 	<p> If you have taken the quiz, Below will show you your previous scores.</p>
-	<p> 
+	<p> Number correct in last attempt:
  {% if 'numCorrect' in session %} 
   {{ session['numCorrect'] }}/8<br>
  {% endif %}
-
+Global Highscore:
  {% if 'highScore' in session %} 
-   {{ session['highScore'] }}/8<br>
- {% endif %}</p>
+   {{ session['highScore'] }}
+ {% endif %} /8</p>
 <p>{{ response }}</p>
 {% endblock %}

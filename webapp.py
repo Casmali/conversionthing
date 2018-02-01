@@ -83,8 +83,9 @@ def render_page1():
         else:
             reply[7] = "Incorrect: the answer was ALOYSIUS SNUFFLEUPAGUS."
     global highscore
-    if correct > highscore:
+    if correct >= highscore:
         highscore = correct
+    session["highScore"] = highscore
     session["numCorrect"] = correct
     return render_template('page1.html', re1 = reply[0], re2 = reply[1], re3 = reply[2], re4 = reply[3], re5 = reply[4], re6 = reply[5], re7 = reply[6], re8 = reply[7])
     
