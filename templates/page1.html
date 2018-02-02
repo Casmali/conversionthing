@@ -4,6 +4,32 @@
 {% block title %}Page 1{% endblock %}
   
 {% block content %}
+<p id="demo"></p>
+
+<script>
+var countDownDate = new Date("August, 2018 0:0:0").getTime();
+
+var x = setInterval(function() {
+
+
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+   
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s until Mr.Snufflupagus' Birthday";
+     
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
     <!--page content-->
     <h1>Page 1</h1>
     <form action='/page1' method="POST">
@@ -28,7 +54,7 @@
       <input type="text" name="fifth">
       <br><p>{{ re5 }}</p><br>
       
-       Name all of Gods family members<br>
+       What is God's favorite food?<br>
       <input type="text" name="sixth">
       <br><p>{{ re6 }}</p><br>
       

@@ -63,11 +63,11 @@ def render_page1():
             reply[4] = "Incorrect: the answer was Big Bird"
     if 'sixth' in request.form:
         name = request.form['sixth']
-        if name == ' tbd':
+        if name == 'Spaghetti':
             correct = correct + 1
             reply[5] = "Correct"   
         else:
-            reply[5] = "Incorrect: the answer was tbd"
+            reply[5] = "Incorrect: the answer was Spaghetti"
     if 'seventh' in request.form:
         name = request.form['seventh']
         if name == 'Senor Snuffalapogo':

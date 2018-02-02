@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 {% set active_page = "page2" %}
 
-{% block title %}Page 2{% endblock %}
+{% block title %}Score!{% endblock %}
   
 {% block content %}
     <!--page content-->
-    <h1>Page 2</h1>
+    <h1>This is your score!</h1>
 	<p> If you have taken the quiz, Below will show you your previous scores.</p>
 	<p> Number correct in last attempt:
  {% if 'numCorrect' in session %} 
@@ -16,4 +16,5 @@ Global Highscore:
    {{ session['highScore'] }}
  {% endif %} /8</p>
 <p>{{ response }}</p>
+<img src="static/god.jpg" alt="Mr snuff">
 {% endblock %}
